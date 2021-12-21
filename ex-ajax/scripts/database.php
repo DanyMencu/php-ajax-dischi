@@ -45,4 +45,10 @@ $database = [
     ]
 ];
 
+//Set content type
+header('Content-Type: application/json');
+
+//Convert and print JSON
+echo json_encode($database);
+
 ?>
