@@ -5,6 +5,7 @@ require_once __DIR__ . '/scripts/database.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@ require_once __DIR__ . '/scripts/database.php';
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -21,7 +23,22 @@ require_once __DIR__ . '/scripts/database.php';
             </div>
         </div>
     </header>
-    
-    <main></main>
+
+    <main>
+        <div class="container disc-section flex-between">
+            <?php foreach ($database as $album) : ?>
+                <div class="album-card">
+                    <div class="poster">
+                        <img src="<?php echo $album['poster'] ?>" alt="<?php echo $album['title'] ?> poster">
+                    </div>
+                    <h3><?php echo $album['title'] ?></h3>
+                    <span class="author"><?php echo $album['author'] ?></span>
+                    <span class="year"><?php echo $album['year'] ?></span>
+                    <span class="genre"><?php echo $album['genre'] ?></span>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </main>
 </body>
+
 </html>

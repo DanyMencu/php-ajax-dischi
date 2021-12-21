@@ -22,10 +22,11 @@ body {
 
 header {
     background-color: #132431;
+    padding: 0.5rem;
 }
 
 .logo {
-    height: 2rem;
+    height: 3rem;
 }
 
 .logo img {
@@ -33,3 +34,34 @@ header {
 }
 
 /* MAIN */
+
+.disc-section {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.album-card {
+    width: calc(100% / 3 - 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2.5rem 0.5rem;
+    padding: 2rem 1rem 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.album-card span {
+    padding: 5px 0;
+}
+
+.poster {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.poster img {
+    width: 100%;
+}
