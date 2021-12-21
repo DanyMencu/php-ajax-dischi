@@ -1,3 +1,8 @@
+<?php
+//Import database
+require_once __DIR__ . '/scripts/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,14 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Spotify logo">
+            </div>
+        </div>
+    </header>
     
+    <main></main>
 </body>
 </html>
