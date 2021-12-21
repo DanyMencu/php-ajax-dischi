@@ -19,13 +19,15 @@ require_once __DIR__ . '/scripts/database.php';
     <header>
         <div class="container">
             <div class="logo">
-                <img src="./img/logo.png" alt="Spotify logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="Spotify logo">
+                </a>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container disc-section flex-between">
+        <div class="container disc-section">
             <?php foreach ($database as $album) : ?>
                 <div class="album-card">
                     <div class="poster">

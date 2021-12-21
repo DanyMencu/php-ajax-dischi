@@ -41,6 +41,10 @@ header {
     flex-wrap: wrap;
 }
 
+.disc-section .year {
+    font-weight: 600;
+}
+
 .album-card {
     width: calc(100% / 3 - 1rem);
     display: flex;
@@ -51,6 +55,14 @@ header {
     padding: 2rem 1rem 1rem;
     background-color: #000;
     color: #fff;
+    cursor: pointer;
+    filter: grayscale(0.3);
+    transition: filter 0.2s;
+}
+
+.album-card:hover {
+    filter: grayscale(0);
+
 }
 
 .album-card span {
